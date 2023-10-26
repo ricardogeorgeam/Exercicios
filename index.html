@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container mt-5">
+    <h1>Informe suas Características para calcular o seu IMC</h1>
+    <form>
+        <div class="mb-3">
+            <label for="altura" class="form-label">Altura (m):</label>
+            <input type="number" class="form-control" id="altura" name="altura" placeholder="Digite sua altura em metros">
+        </div>
+        <div class="mb-3">
+            <label for="peso" class="form-label">Peso (kg):</label>
+            <input type="number" class="form-control" id="peso" name="peso" placeholder="Digite seu peso em kg">
+        </div>
+        <button type="button" class="btn btn-primary" onclick="calcularImc()">Calcular</button>
+    </form>
+    <p id="resultado"></p>
+    <script src="script.js"></script>
+</div>
+</body>
+</html>
